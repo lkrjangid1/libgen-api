@@ -23,7 +23,7 @@ def find_book(data):
 
     api_filters = {"Year":year, "Extension":extension, "Language":lang, "Author":author} #{"Title" : title, "Author" : author, "ID" : book_id, "Year" : year, "Language": lang}
 
-    results = lb.search_title(title) #search_title_filtered(title, api_filters, exact_match = False)
+    results = lb.search_title(data) #search_title_filtered(title, api_filters, exact_match = False)
 
     return jsonify(results)
 
